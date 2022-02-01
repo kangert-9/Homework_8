@@ -1,11 +1,9 @@
 package ru.geekbrains.di
 
 import dagger.Module
-import dagger.Provides
-import ru.geekbrains.App
-import javax.inject.Singleton
+import ru.geekbrains.mvpuser.di.UserComponent
 
-@Module
+@Module(subcomponents = [UserComponent::class])
 class AppModule() {
 
 }

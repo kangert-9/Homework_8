@@ -1,6 +1,5 @@
 package ru.geekbrains.di
 
-import androidx.room.Room
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
@@ -11,14 +10,8 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
-import ru.geekbrains.App
-import ru.geekbrains.data.GitHubUserRepository
-import ru.geekbrains.data.GitHubUserRepositoryImpl
 import ru.geekbrains.data.retrofit.GitHubApi
-import ru.geekbrains.data.room.DBStorage
 import javax.inject.Named
-import javax.inject.Qualifier
-import javax.inject.Singleton
 
 @Module
 class NetworkModule {
